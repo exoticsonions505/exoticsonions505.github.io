@@ -45,14 +45,33 @@
 
 
 <nav class="top-bar">
-  <button>TOR</button>
+<a href="https://www.example.com">
+  <button>Click me to redirect</button>
+</a>
+  <a href="https://www.example.com">
+  <button>BYPASS METHOD</button>
+</a>
+  <a href="https://www.example.com">
   <button>PROXIES</button>
-  <button>BYPASS</button>
-  <button>PUGS</button>
+</a>
+<button id="showTextBox">Show Text Box</button>
+<div id="textBox" style="display: none;">
+  <textarea rows="5" cols="30"></textarea>
+</div>
 </nav>
     
   <h1> Wanna browse without the world watching you?</h1>
   <h2> Let me Show you how...</h2>
 
+const showButton = document.getElementById('showTextBox');
+const textBox = document.getElementById('textBox');
+
+showButton.addEventListener('click', () => {
+  textBox.style.display = 'block';
+  textBox.style.position = 'absolute';
+  textBox.style.top = '50%';
+  textBox.style.left = '50%';
+  textBox.style.transform = 'translate(-50%, -50%)';
+});
 </body>
 </html>
