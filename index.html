@@ -19,12 +19,6 @@
   cursor: pointer;
   border-radius: 5px;
 }
-   .textBox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
    </style>
 </head>
 <body>
@@ -70,9 +64,15 @@
   <h1> Wanna browse without the world watching you?</h1>
   <h2> Let me Show you how...</h2>
   
-  <script>function toggleTextBox() {
-  const textBox = document.getElementById('textBox');
-  textBox.style.display = textBox.style.display === 'none' ? 'block' : 'none';
-}</script>
+  <script>const showButton = document.getElementById('showTextBox');
+const textBox = document.getElementById('textBox');
+
+showButton.addEventListener('click', () => {
+  textBox.style.display = 'block';
+  textBox.style.position = 'absolute';
+  textBox.style.top = '50%';
+  textBox.style.left = '50%';
+  textBox.style.transform = 'translate(-50%, -50%)';
+});</script>
 </body>
 </html>
