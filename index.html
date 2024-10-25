@@ -18,6 +18,44 @@
             text-align: left;
             cursor: pointer;
         }
+   .dropdown-button {
+  position: relative;
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.dropdown-button .caret {
+  float: right;
+  margin-left: 5px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-button:hover   
+ .dropdown-menu {
+  display: block;
+}
    </style>
 </head>
 <body>
@@ -37,8 +75,15 @@
 
 <h1> Welcome to your ticket to the dark web  </h1>
   <div class="sidebar">
-        <button>TOR</button>
-        <button>PROXIES</button>
+        <button>onclick="window.location.href='https://drive.google.com/drive/folders/1ndg__aPpGKLLRla7ll0UdffHVEAEBclA?usp=sharing';">TOR</button>
+        <button class="dropdown-button">
+  Dropdown Menu <span class="caret">&#9660;</span>
+  <ul class="dropdown-menu">
+    <li><a href="https://xn--no8h.sinewave.cc/">INTERSTELLAR</a></li>
+    <li><a href="sentry.soraapp.gq">RAMMERHEAD</a></li>
+    <li><a href="https://focus.core.stefanroberts.org/ ">UTOPIA</a></li>
+  </ul>
+</button>
         <button>BYPASS METHODS</button>
         <button>PUGS</button>
     </div>
