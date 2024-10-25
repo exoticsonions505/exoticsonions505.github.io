@@ -55,24 +55,20 @@
   <a href="https://www.example.com">
   <button>PROXIES</button>
 </a>
-<button id="showTextBox">Show Text Box</button>
-<div id="textBox" style="display: none;">
-  <textarea rows="5" cols="30"></textarea>
+<button id="showDivButton">Show Div</button>
+<div id="centeredDiv" style="display: none;">
+  This is a centered div.
 </div>
 </nav>
     
   <h1> Wanna browse without the world watching you?</h1>
   <h2> Let me Show you how...</h2>
   
-  <script>const showButton = document.getElementById('showTextBox');
-const textBox = document.getElementById('textBox');
+  <script>const showDivButton = document.getElementById('showDivButton');
+const centeredDiv = document.getElementById('centeredDiv');
 
-showButton.addEventListener('click', () => {
-  textBox.style.display = 'block';
-  textBox.style.position = 'absolute';
-  textBox.style.top = '50%';
-  textBox.style.left = '50%';
-  textBox.style.transform = 'translate(-50%, -50%)';
+showDivButton.addEventListener('click', () => {
+  centeredDiv.style.display = 'block';
 });</script>
 </body>
 </html>
