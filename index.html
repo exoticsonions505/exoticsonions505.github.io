@@ -75,11 +75,16 @@
   This is a div.
 </div>
   
-  <script>const showDivButton = document.getElementById('showDivButton');
+  <script>const toggleDivButton = document.getElementById('toggleDivButton');
 const myDiv = document.getElementById('myDiv');
 
-showDivButton.addEventListener('click', () => {
-  myDiv.style.display = 'block';
+toggleDivButton.addEventListener('click', () => {
+  if (myDiv.style.display === 'none') {
+    myDiv.style.display = 'block';
+  } else {
+    myDiv.style.display = 'none';
+  }
+});</script>
 });</script>
 </body>
 </html>
