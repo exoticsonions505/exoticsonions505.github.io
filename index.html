@@ -19,7 +19,7 @@
   cursor: pointer;
   border-radius: 5px;
 }
-   .centeredDiv {
+   .bypassMETHOD {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,6 +28,7 @@
   padding: 20px;
   background-color: white;
 }
+   
    </style>
 </head>
 <body>
@@ -71,20 +72,19 @@
   <h1> Wanna browse without the world watching you?</h1>
   <h2> Let me Show you how...</h2>
 
-<div id="myDiv">
-fien
+<div id="bypassMETHOD">
+yo
 </div>
   
   <script>const toggleDivButton = document.getElementById('toggleDivButton');
-const myDiv = document.getElementById('myDiv');
+const myDiv = document.getElementById('bypassMETHOD');
 
 toggleDivButton.addEventListener('click', () => {
-  if (myDiv.style.display === 'none') {
-    myDiv.style.display = 'block';
+  if (bypassMETHOD.style.display === 'none') {
+    bypassMETHOD.style.display = 'block';
   } else {
-    myDiv.style.display = 'none';
+    bypassMETHOD.style.display = 'none';
   }
-});</script>
 });</script>
 </body>
 </html>
