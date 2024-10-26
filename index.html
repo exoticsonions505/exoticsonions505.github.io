@@ -70,15 +70,16 @@
  
   <h1> Wanna browse without the world watching you?</h1>
   <h2> Let me Show you how...</h2>
-     <div id="centeredDiv">
-  This is a centered div.
+ <button id="showDivButton">Show Div</button>
+<div id="myDiv" style="display: none;">
+  This is a div.
 </div>
   
   <script>const showDivButton = document.getElementById('showDivButton');
-const centeredDiv = document.getElementById('centeredDiv');
+const myDiv = document.getElementById('myDiv');
 
 showDivButton.addEventListener('click', () => {
-  centeredDiv.style.display = 'block';
+  myDiv.style.display = 'block';
 });</script>
 </body>
 </html>
